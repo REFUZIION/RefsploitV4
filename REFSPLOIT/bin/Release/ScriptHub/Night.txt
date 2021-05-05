@@ -1,0 +1,5 @@
+getglobal game
+getfield -1 Lighting
+pushstring 00:00:00
+setfield -2 TimeOfDay
+emptystack

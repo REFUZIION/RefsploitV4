@@ -1,0 +1,226 @@
+mas = Instance.new("ScreenGui",game:service'Players'.LocalPlayer.PlayerGui) 
+o2 = Instance.new("Frame")
+o3 = Instance.new("ImageButton")
+o4 = Instance.new("TextLabel")
+o5 = Instance.new("Frame")
+o6 = Instance.new("TextButton")
+o7 = Instance.new("TextButton")
+o8 = Instance.new("TextButton")
+o9 = Instance.new("TextButton")
+o10 = Instance.new("TextButton")
+o11 = Instance.new("TextButton")
+o12 = Instance.new("TextButton")
+o13 = Instance.new("TextButton")
+o2.Name = "Main"
+o2.Parent = mas
+o2.Position = UDim2.new(0.5,-200,0.15000000596046,0)
+o2.Size = UDim2.new(0,200,0,250)
+o2.Position = UDim2.new(0.5,-200,0.15000000596046,0)
+o2.Active = true
+o2.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
+o2.BorderSizePixel = 0
+o2.Draggable = true
+o3.Name = "Minimize"
+o3.Parent = o2
+o3.Position = UDim2.new(1,-50,0,5)
+o3.Size = UDim2.new(0,30,0,20)
+o3.Position = UDim2.new(1,-50,0,5)
+o3.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
+o3.BorderColor3 = Color3.new(1, 0, 0)
+o3.BorderSizePixel = 0
+o4.Name = "Title"
+o4.Parent = o2
+o4.Position = UDim2.new(0,10,0,0)
+o4.Size = UDim2.new(0.69999998807907,0,0,30)
+o4.Text = "Jailbreak Gui v1.0"
+o4.Position = UDim2.new(0,10,0,0)
+o4.BackgroundColor3 = Color3.new(1, 1, 1)
+o4.BackgroundTransparency = 1
+o4.BorderSizePixel = 0
+o4.Font = Enum.Font.SourceSansBold
+o4.FontSize = Enum.FontSize.Size18
+o4.TextColor3 = Color3.new(1, 1, 1)
+o4.TextXAlignment = Enum.TextXAlignment.Left
+o5.Name = "Content"
+o5.Parent = o2
+o5.Position = UDim2.new(0,2,0,32)
+o5.Size = UDim2.new(1,-4,1,-34)
+o5.Position = UDim2.new(0,2,0,32)
+o5.BackgroundColor3 = Color3.new(0.388235, 0.388235, 0.388235)
+o5.BorderSizePixel = 0
+o6.Name = "BankInside"
+o6.Parent = o5
+o6.Position = UDim2.new(0.10000000149012,0,0.050000000745058,0)
+o6.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o6.Text = "Bank Inside"
+o6.Position = UDim2.new(0.10000000149012,0,0.050000000745058,0)
+o6.BackgroundColor3 = Color3.new(1, 1, 1)
+o6.BackgroundTransparency = 0.89999997615814
+o6.BorderSizePixel = 0
+o6.Font = Enum.Font.SourceSansBold
+o6.FontSize = Enum.FontSize.Size14
+o6.TextColor3 = Color3.new(1, 1, 1)
+o6.TextWrapped = true
+o7.Name = "BankOutside"
+o7.Parent = o5
+o7.Position = UDim2.new(0.60000002384186,0,0.050000000745058,0)
+o7.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o7.Text = "Bank Outside"
+o7.Position = UDim2.new(0.60000002384186,0,0.050000000745058,0)
+o7.BackgroundColor3 = Color3.new(1, 1, 1)
+o7.BackgroundTransparency = 0.89999997615814
+o7.BorderSizePixel = 0
+o7.Font = Enum.Font.SourceSansBold
+o7.FontSize = Enum.FontSize.Size14
+o7.TextColor3 = Color3.new(1, 1, 1)
+o7.TextWrapped = true
+o8.Name = "Hideout1"
+o8.Parent = o5
+o8.Position = UDim2.new(0.10000000149012,0,0.30000001192093,0)
+o8.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o8.Text = "Hideout 1"
+o8.Position = UDim2.new(0.10000000149012,0,0.30000001192093,0)
+o8.BackgroundColor3 = Color3.new(1, 1, 1)
+o8.BackgroundTransparency = 0.89999997615814
+o8.BorderSizePixel = 0
+o8.Font = Enum.Font.SourceSansBold
+o8.FontSize = Enum.FontSize.Size14
+o8.TextColor3 = Color3.new(1, 1, 1)
+o8.TextWrapped = true
+o9.Name = "Hideout2"
+o9.Parent = o5
+o9.Position = UDim2.new(0.60000002384186,0,0.30000001192093,0)
+o9.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o9.Text = "Hideout 2"
+o9.Position = UDim2.new(0.60000002384186,0,0.30000001192093,0)
+o9.BackgroundColor3 = Color3.new(1, 1, 1)
+o9.BackgroundTransparency = 0.89999997615814
+o9.BorderSizePixel = 0
+o9.Font = Enum.Font.SourceSansBold
+o9.FontSize = Enum.FontSize.Size14
+o9.TextColor3 = Color3.new(1, 1, 1)
+o9.TextWrapped = true
+o10.Name = "PoliceStation"
+o10.Parent = o5
+o10.Position = UDim2.new(0.10000000149012,0,0.55000001192093,0)
+o10.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o10.Text = "Police Station"
+o10.Position = UDim2.new(0.10000000149012,0,0.55000001192093,0)
+o10.BackgroundColor3 = Color3.new(1, 1, 1)
+o10.BackgroundTransparency = 0.89999997615814
+o10.BorderSizePixel = 0
+o10.Font = Enum.Font.SourceSansBold
+o10.FontSize = Enum.FontSize.Size14
+o10.TextColor3 = Color3.new(1, 1, 1)
+o10.TextWrapped = true
+o11.Name = "Garage"
+o11.Parent = o5
+o11.Position = UDim2.new(0.60000002384186,0,0.55000001192093,0)
+o11.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o11.Text = "To Garage"
+o11.Position = UDim2.new(0.60000002384186,0,0.55000001192093,0)
+o11.BackgroundColor3 = Color3.new(1, 1, 1)
+o11.BackgroundTransparency = 0.89999997615814
+o11.BorderSizePixel = 0
+o11.Font = Enum.Font.SourceSansBold
+o11.FontSize = Enum.FontSize.Size14
+o11.TextColor3 = Color3.new(1, 1, 1)
+o11.TextWrapped = true
+o12.Name = "FindHeli"
+o12.Parent = o5
+o12.Position = UDim2.new(0.10000000149012,0,0.80000001192093,0)
+o12.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o12.Text = "Find Heli"
+o12.Position = UDim2.new(0.10000000149012,0,0.80000001192093,0)
+o12.BackgroundColor3 = Color3.new(1, 1, 1)
+o12.BackgroundTransparency = 0.89999997615814
+o12.BorderSizePixel = 0
+o12.Font = Enum.Font.SourceSansBold
+o12.FontSize = Enum.FontSize.Size14
+o12.TextColor3 = Color3.new(1, 1, 1)
+o12.TextWrapped = true
+o13.Name = "FindCar"
+o13.Parent = o5
+o13.Position = UDim2.new(0.60000002384186,0,0.80000001192093,0)
+o13.Size = UDim2.new(0.30000001192093,0,0.20000000298023,0)
+o13.Text = "Find Car"
+o13.Position = UDim2.new(0.60000002384186,0,0.80000001192093,0)
+o13.BackgroundColor3 = Color3.new(1, 1, 1)
+o13.BackgroundTransparency = 0.89999997615814
+o13.BorderSizePixel = 0
+o13.Font = Enum.Font.SourceSansBold
+o13.FontSize = Enum.FontSize.Size14
+o13.TextColor3 = Color3.new(1, 1, 1)
+o13.TextWrapped = true
+
+local Plr = game:service'Players'.LocalPlayer
+BankInside = CFrame.new(33,1,815)
+BankOutside = CFrame.new(1, 17, 782)
+Hideout1 = CFrame.new(-220, 17, 1578)
+Hideout2 = CFrame.new(1637,49,-1768)
+PoliceStation = CFrame.new(745, 38, 1133)
+Garage = CFrame.new(-342, 19, 1183)
+RemoveDoorsAndLasers = function()
+	workspace.Banks.Bank.Door:Destroy()
+	workspace.Banks.Bank.TriggerDoor:Destroy()
+	workspace.Banks.Bank.Lasers:Destroy()
+	workspace.Doors:Destroy()
+end
+FindOpenHeli = function()
+	for i,v in pairs(workspace.Vehicles:children()) do
+		if v.Name == "Heli" then
+			if v.Seat.Player.Value == false then
+				Plr.Character.HumanoidRootPart.CFrame = v.Seat.CFrame + Vector3.new(0,3,0)
+			end
+		end
+	end
+end
+FindOpenCar = function()
+	for i,v in pairs(workspace.Vehicles:children()) do
+		if v.Name == "Camaro" then
+			if v.Seat.Player.Value == false then
+				Plr.Character.HumanoidRootPart.CFrame = v.Seat.CFrame + Vector3.new(0,4,0)
+			end
+		end
+	end
+end
+o6.MouseButton1Down:connect(function()
+	Plr.Character.HumanoidRootPart.CFrame = BankInside
+end)
+o7.MouseButton1Down:connect(function()
+	Plr.Character.HumanoidRootPart.CFrame = BankOutside
+end)
+o8.MouseButton1Down:connect(function()
+	Plr.Character.HumanoidRootPart.CFrame = Hideout1
+end)
+o9.MouseButton1Down:connect(function()
+	Plr.Character.HumanoidRootPart.CFrame = Hideout2
+end)
+o10.MouseButton1Down:connect(function()
+	Plr.Character.HumanoidRootPart.CFrame = PoliceStation
+end)
+o11.MouseButton1Down:connect(function()
+	Plr.Character.HumanoidRootPart.CFrame = Garage
+end)
+o12.MouseButton1Down:connect(function()
+	FindOpenHeli()
+end)
+o13.MouseButton1Down:connect(function()
+	FindOpenCar()
+end)
+o3.MouseButton1Down:connect(function()
+	RemoveDoorsAndLasers()
+	local m = Instance.new("Message",workspace.CurrentCamera)
+	m.Text = "Removed all Doors and lasers"
+	wait(3)
+	m:Destroy()
+end)
+local h = Instance.new("Hint",workspace.CurrentCamera)
+while wait(1) do
+	local open = workspace.Banks.Bank.Extra.Light.SurfaceLight
+	if open.Enabled == true then
+		h.Text = "Bank Open: True"
+	else
+		h.Text = "Bank Open: False"
+	end
+end

@@ -1,0 +1,8 @@
+emptystack
+getglobal game
+getfield Workspace
+getfield AidenR15
+getfield Remove
+pushvalue -4
+pcall 1 1 0
+emptystack

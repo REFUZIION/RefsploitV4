@@ -1,0 +1,3 @@
+-- Replace "car" with the vehicle. DO NOT EXECUTE WHEN IN VEHICLE
+game.Workspace.Vehicles["Car"].Stats.MaxSpeed.Offroad.Value = 200
+game.Workspace.Vehicles["Car"].Stats.MaxSpeed.Value = 200

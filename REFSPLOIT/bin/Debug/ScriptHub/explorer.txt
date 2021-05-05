@@ -1,0 +1,77 @@
+--Made by Avion (Kai) and Clv (Thanks Clv <3)
+-- To modify what is scanned go to lines 21 and 22 and copy those, but with the new location.
+local toFind = {
+  RemoteEvent = true;
+  RemoteFunction = true;
+  BindableEvent = true;
+  BindableFunction = true;
+};
+local found = {};
+
+function find(obj,args)
+  for _,v in pairs(obj:children()) do
+    for class,_ in pairs(args) do
+      if v.ClassName == class then
+        if found[class] then table.insert(found[class],v) else found[class] = {v} end
+      end
+    end
+    if #v:children() > 0 then find(v,args) end;
+    end;
+  end
+
+  -- Don't mess with anything below
+  find(Workspace,toFind)
+  find(game.ReplicatedStorage,toFind)
+
+  if toFind["BindableEvent"] then
+    if found.BindableEvent ~= nil then
+      warn("BindableEvent(s)")
+      for i = 1,#found.BindableEvent do
+        print(found.BindableEvent[i]:GetFullName())
+      end
+      warn("End of BindableEvent(s)")
+    else
+    end
+  end
+
+  warn("------------------------------------------------------------------------------------------------------------------------------------------")
+
+  if toFind["BindableFunction"] then
+    if found.BindableFunction ~= nil then
+      warn("BindableFunction(s)")
+      for i = 1,#found.BindableFunction do
+        print(found.BindableFunction[i]:GetFullName())
+      end
+      warn("End of BindableFunction(s)")
+    else
+      warn("No BindableEvents")
+    end
+  end
+
+  warn("------------------------------------------------------------------------------------------------------------------------------------------")
+
+  if toFind["RemoteEvent"] then
+    if found.RemoteEvent ~= nil then
+      warn("RemoteEvent(s)")
+      for i = 1,#found.RemoteEvent do
+        print(found.RemoteEvent[i]:GetFullName())
+      end
+      warn("End of RemoteEvents(s)")
+    else
+      warn("No RemoteEvent(s) Found")
+    end
+  end
+
+  warn("------------------------------------------------------------------------------------------------------------------------------------------")
+
+  if toFind["RemoteFunction"] then
+    if found.RemoteFunction ~= nil then
+      warn("RemoteFunction(s)")
+      for i = 1,#found.RemoteFunction do
+        print(found.RemoteFunction[i]:GetFullName())
+      end
+      warn("End of RemoteFunction(s)")
+    else
+      warn("No RemoteFunction(s) Found")
+    end
+  end

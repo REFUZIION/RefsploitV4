@@ -1,0 +1,75 @@
+local CoreGui = game:GetService("CoreGui")
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local chams = false
+_G.teamcolormatters = true
+
+function GetPlayers()
+	local Result = {}
+	for _, p in next, game.Players:GetChildren() do
+		if p ~= player and p.ClassName == "Player" then
+			if _G.teamcolormatters then
+				if player.TeamColor ~= p.TeamColor then
+					table.insert(Result, p)
+				end
+			else
+				table.insert(Result, p)
+			end
+		end
+	end
+	return Result
+end
+
+function GetSize(i)
+	if i:IsA("BasePart") then
+		return i.Size
+	elseif i:IsA("Model") then
+		return i:GetExtentsSize()
+	end
+end
+
+function ClearChams()
+	for _, Cham in pairs(CoreGui:GetChildren()) do 
+		if Cham.Name:find("Cham_") then 
+			Cham:Destroy()
+		end 
+	end	
+end
+
+--> Chams
+function Chams()
+	for _, Player in next, GetPlayers() do
+		if Player.Character and Player.Character:FindFirstChild("Torso") then
+			for _, Part in next, Player.Character:GetChildren() do
+				if Part:IsA("PVInstance") then
+					local Box = Instance.new("BoxHandleAdornment")
+					Box.Size = GetSize(Part) + Vector3.new(.2, .2, .2)
+					Box.Name = "Cham_" .. Player.Name
+					Box.Color3 = Player.TeamColor.Color
+					Box.Adornee = Part
+					Box.AlwaysOnTop = true
+					Box.ZIndex = 5
+					Box.Transparency = .1
+					Box.Parent = CoreGui
+				end
+			end
+		end
+	end	
+end
+
+local function Reset() if chams then ClearChams() Chams() end end
+
+mouse.KeyDown:connect(function(key)
+	if key:byte() == 106 then
+		chams = not chams
+		if chams then Chams() else ClearChams() end
+		warn("Chams: "..tostring(chams))
+	end
+end)
+
+print('--------------------')
+print('CB:RO ESP Loaded!: J = Chams')
+print('--------------------')
+
+workspace.ChildAdded:connect(Reset)
+workspace.ChildRemoved:connect(Reset)

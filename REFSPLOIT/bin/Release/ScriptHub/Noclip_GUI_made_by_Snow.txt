@@ -1,0 +1,122 @@
+-- Objects
+
+local Noclip_GUI = Instance.new("ScreenGui")
+local SnowMenu = Instance.new("Frame")
+local Noclip = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Opener = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+
+-- Properties
+
+Noclip_GUI.Name = "Noclip_GUI"
+Noclip_GUI.Parent = game.CoreGui
+
+SnowMenu.Name = "SnowMenu"
+SnowMenu.Parent = Noclip_GUI
+SnowMenu.Active = true
+SnowMenu.BackgroundColor3 = Color3.new(1, 1, 1)
+SnowMenu.BorderColor3 = Color3.new(1, 0, 0)
+SnowMenu.BorderSizePixel = 0
+SnowMenu.ClipsDescendants = true
+SnowMenu.Draggable = true
+SnowMenu.Position = UDim2.new(0, 161, 0, 99)
+SnowMenu.Selectable = true
+SnowMenu.Size = UDim2.new(0, 334, 0, 326)
+SnowMenu.Visible = false
+
+Noclip.Name = "Noclip"
+Noclip.Parent = SnowMenu
+Noclip.BackgroundColor3 = Color3.new(1, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0, 67, 0, 192)
+Noclip.Size = UDim2.new(0, 200, 0, 50)
+Noclip.Font = Enum.Font.Cartoon
+Noclip.FontSize = Enum.FontSize.Size14
+Noclip.Text = "Enable Noclip"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextScaled = true
+Noclip.TextSize = 14
+Noclip.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = SnowMenu
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0, 274, 0, 299)
+Close.Size = UDim2.new(0, 60, 0, 27)
+Close.Font = Enum.Font.Cartoon
+Close.FontSize = Enum.FontSize.Size14
+Close.Text = "Exit"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+Frame.Parent = SnowMenu
+Frame.BackgroundColor3 = Color3.new(1, 0, 0)
+Frame.BorderColor3 = Color3.new(1, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 334, 0, 56)
+
+TextLabel.Parent = SnowMenu
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0, 23, 0, 0)
+TextLabel.Size = UDim2.new(0, 288, 0, 51)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.FontSize = Enum.FontSize.Size14
+TextLabel.Text = "Noclip GUI - By Snow"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+Opener.Name = "Opener"
+Opener.Parent = Noclip_GUI
+Opener.BackgroundColor3 = Color3.new(1, 1, 1)
+Opener.BackgroundTransparency = 1
+Opener.Size = UDim2.new(0, 100, 0, 100)
+
+Open.Name = "Open"
+Open.Parent = Opener
+Open.BackgroundColor3 = Color3.new(1, 1, 1)
+Open.BorderColor3 = Color3.new(1, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0, 228)
+Open.Size = UDim2.new(0, 135, 0, 40)
+Open.Font = Enum.Font.Cartoon
+Open.FontSize = Enum.FontSize.Size14
+Open.Text = "Open"
+Open.TextColor3 = Color3.new(1, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14
+Open.TextWrapped = true
+
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+
+Noclip.MouseButton1Click:connect(function()
+noclip = not noclip
+if Noclip.Text == "Enable Noclip" then
+    Noclip.Text = "Disable Noclip"
+else
+    Noclip.Text = "Enable Noclip"
+end
+end)
+
+Open.MouseButton1Click:connect(function()
+	game.CoreGui.Noclip_GUI.Opener.Visible = false
+	game.CoreGui.Noclip_GUI.SnowMenu.Visible = true
+end)
+
+Close.MouseButton1Click:connect(function()
+	game.CoreGui.Noclip_GUI.Opener.Visible = true
+	game.CoreGui.Noclip_GUI.SnowMenu.Visible = false
+end)

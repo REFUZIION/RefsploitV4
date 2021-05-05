@@ -1,0 +1,211 @@
+-- Objects
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local wat = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local hqb = Instance.new("TextButton")
+local hq = Instance.new("TextButton")
+local afara = Instance.new("TextButton")
+local elicopter = Instance.new("TextButton")
+local banca = Instance.new("TextButton")
+local arme = Instance.new("TextButton")
+local masini = Instance.new("TextButton")
+local bani = Instance.new("TextButton")
+local adica = Instance.new("TextLabel")
+local mmm = Instance.new("TextLabel")
+local open = Instance.new("TextButton")
+
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderSizePixel = 0
+Frame.Draggable = true
+Frame.Visible = false
+Frame.Position = UDim2.new(0, 265, 0, 59)
+Frame.Size = UDim2.new(0, 318, 0, 387)
+
+wat.Name = "wat"
+wat.Parent = Frame
+wat.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+wat.BorderSizePixel = 0
+wat.Size = UDim2.new(0, 318, 0, 50)
+wat.Font = Enum.Font.SourceSansBold
+wat.FontSize = Enum.FontSize.Size14
+wat.Text = ""
+wat.TextColor3 = Color3.new(0, 0, 0)
+wat.TextSize = 14
+
+close.Name = "close"
+close.Parent = wat
+close.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+close.BorderSizePixel = 0
+close.Size = UDim2.new(0, 31, 0, 22)
+close.Font = Enum.Font.SourceSansBold
+close.FontSize = Enum.FontSize.Size14
+close.Text = "X"
+close.TextSize = 14
+
+hqb.Name = "hqb"
+hqb.Parent = Frame
+hqb.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+hqb.BorderSizePixel = 0
+hqb.Position = UDim2.new(0, 91, 0, 102)
+hqb.Size = UDim2.new(0, 68, 0, 33)
+hqb.Font = Enum.Font.SourceSansBold
+hqb.FontSize = Enum.FontSize.Size14
+hqb.Text = "HQ Base 2"
+hqb.TextSize = 14
+
+hq.Name = "hq"
+hq.Parent = Frame
+hq.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+hq.BorderSizePixel = 0
+hq.Position = UDim2.new(0, 16, 0, 102)
+hq.Size = UDim2.new(0, 68, 0, 33)
+hq.Font = Enum.Font.SourceSansBold
+hq.FontSize = Enum.FontSize.Size14
+hq.Text = "HQ Base 1"
+hq.TextSize = 14
+
+afara.Name = "afara"
+afara.Parent = Frame
+afara.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+afara.BorderSizePixel = 0
+afara.Position = UDim2.new(0, 16, 0, 160)
+afara.Size = UDim2.new(0, 68, 0, 33)
+afara.Font = Enum.Font.SourceSansBold
+afara.FontSize = Enum.FontSize.Size14
+afara.Text = "Outside"
+afara.TextSize = 14
+
+elicopter.Name = "elicopter"
+elicopter.Parent = Frame
+elicopter.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+elicopter.BorderSizePixel = 0
+elicopter.Position = UDim2.new(0, 91, 0, 160)
+elicopter.Size = UDim2.new(0, 68, 0, 33)
+elicopter.Font = Enum.Font.SourceSansBold
+elicopter.FontSize = Enum.FontSize.Size14
+elicopter.Text = "Helicopter"
+elicopter.TextSize = 14
+
+banca.Name = "banca"
+banca.Parent = Frame
+banca.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+banca.BorderSizePixel = 0
+banca.Position = UDim2.new(0, 16, 0, 211)
+banca.Size = UDim2.new(0, 68, 0, 33)
+banca.Font = Enum.Font.SourceSansBold
+banca.FontSize = Enum.FontSize.Size14
+banca.Text = "Bank"
+banca.TextSize = 14
+
+arme.Name = "arme"
+arme.Parent = Frame
+arme.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+arme.BorderSizePixel = 0
+arme.Position = UDim2.new(0, 91, 0, 211)
+arme.Size = UDim2.new(0, 68, 0, 33)
+arme.Font = Enum.Font.SourceSansBold
+arme.FontSize = Enum.FontSize.Size14
+arme.Text = "Guns"
+arme.TextSize = 14
+
+masini.Name = "masini"
+masini.Parent = Frame
+masini.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+masini.BorderSizePixel = 0
+masini.Position = UDim2.new(0, 16, 0, 258)
+masini.Size = UDim2.new(0, 68, 0, 33)
+masini.Font = Enum.Font.SourceSansBold
+masini.FontSize = Enum.FontSize.Size14
+masini.Text = "Police Cars"
+masini.TextSize = 14
+
+bani.Name = "bani"
+bani.Parent = Frame
+bani.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+bani.BorderSizePixel = 0
+bani.Position = UDim2.new(0, 91, 0, 258)
+bani.Size = UDim2.new(0, 68, 0, 33)
+bani.Font = Enum.Font.SourceSansBold
+bani.FontSize = Enum.FontSize.Size14
+bani.Text = "Money"
+bani.TextSize = 14
+
+adica.Name = "adica"
+adica.Parent = Frame
+adica.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+adica.BorderSizePixel = 0
+adica.Position = UDim2.new(0, 177, 0, 101)
+adica.Size = UDim2.new(0, 124, 0, 190)
+adica.Font = Enum.Font.SourceSansBold
+adica.FontSize = Enum.FontSize.Size14
+adica.Text = "Credits"
+adica.TextSize = 14
+
+mmm.Name = "mmm"
+mmm.Parent = Frame
+mmm.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+mmm.BorderSizePixel = 0
+mmm.Position = UDim2.new(0, 196, 0, 212)
+mmm.Size = UDim2.new(0, 92, 0, 30)
+mmm.Font = Enum.Font.SourceSansBold
+mmm.FontSize = Enum.FontSize.Size14
+mmm.Text = "Cozmo"
+mmm.TextSize = 14
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.new(1, 0.666667, 0)
+open.BorderSizePixel = 0
+open.Position = UDim2.new(0, 0, 0, 252)
+open.Size = UDim2.new(0, 107, 0, 25)
+open.Font = Enum.Font.SourceSansBold
+open.FontSize = Enum.FontSize.Size14
+open.Text = " Open"
+open.TextSize = 14
+
+
+hq.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-222.339157, 17.9125443, 1575.82336) + Vector3.new(1,0,0)
+end)
+banca.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.1110189, 17.9213142, 782.103455) + Vector3.new(1,0,0)
+end)
+bani.MouseButton1Click:connect(function()
+	local Player = game.Players.LocalPlayer
+wait(0.5)
+for i,v in pairs(game.Teams.Criminal:GetPlayers()) do
+repeat
+wait()
+Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+until v.Team.Name ~= "Criminal"
+end
+end)
+masini.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1100.4469, 17.7500038, -1493.18286) + Vector3.new(1,0,0)
+end)
+elicopter.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1176.4231, 59.7911148, -1572.6908) + Vector3.new(1,0,0)
+end)
+arme.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1130.11426, 17.950058, -1593.09766) + Vector3.new(1,0,0)
+end)
+afara.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1175.51843, 17.3656254, -1303.57813) + Vector3.new(1,5,0)
+end)
+open.MouseButton1Click:connect(function()
+	Frame.Visible = true
+end)
+close.MouseButton1Click:connect(function()
+	Frame.Visible = false
+end)
+hqb.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(234, 19, 1582) + Vector3.new(1,0,0)
+end)

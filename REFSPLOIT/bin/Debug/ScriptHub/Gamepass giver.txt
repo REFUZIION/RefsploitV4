@@ -1,0 +1,51 @@
+local MarketplaceService = Game:GetService("MarketplaceService")
+local Players = game:GetService("Players")
+Players.CharacterAutoLoads = false
+
+game.Players.PlayerAdded:connect(function(player)
+if game:GetService("MarketplaceService"):PlayerOwnsAsset(player,878902564) then
+print(player.Name .. " has access to this place!")
+player:LoadCharacter()
+else
+print(player.Name .. " doesn't have access to this place!")
+GUI = Instance.new("ScreenGui",player.PlayerGui)
+mainFrame = Instance.new("Frame",GUI)
+mainFrame.BackgroundColor3 = Color3.new(255/255,255/255,255/255)
+mainFrame.AnchorPoint = Vector2.new(0.5,0.5)
+mainFrame.BorderSizePixel = 0
+mainFrame.Size = UDim2.new(0.35,0,0.15,0)
+mainFrame.Position = UDim2.new(0.5,0,0.5,0)
+border = Instance.new("Frame",mainFrame)
+border.BackgroundColor3 = Color3.new(50/255,50/255,50/255)
+border.BorderSizePixel = 0
+border.Size = UDim2.new(1,0,0,25)
+title = Instance.new("TextLabel",border)
+title.BackgroundTransparency = 1
+title.BorderSizePixel = 0
+title.Size = UDim2.new(1,0,0,25)
+title.Font = "ArialBold"
+title.Text = game.Name .. "'s Access Panel"
+title.TextColor3 = Color3.new(255/255,255/255,255/255)
+body = Instance.new("TextLabel",mainFrame)
+body.BackgroundTransparency = 1
+body.BorderSizePixel = 0
+body.Size = UDim2.new(1,0,0.5,0)
+body.Position = UDim2.new(0,0,0.35,0)
+body.Font = "ArialBold"
+body.Text = "You don't seem to have access to this game, please buy this item to fix that!"
+body.TextColor3 = Color3.new(0/255,0/255,0/255)
+body.TextSize = 16
+buyButton = Instance.new("TextButton",mainFrame)
+buyButton.BackgroundColor3 = Color3.new(50/255,200/255,50/255)
+buyButton.BorderSizePixel = 0
+buyButton.Size = UDim2.new(1,0,0,50)
+buyButton.Position = UDim2.new(0,0,1,0)
+buyButton.Font = "ArialBold"
+buyButton.Text = "BUY NOW!"
+buyButton.TextColor3 = Color3.new(255/255,255/255,255/255)
+buyButton.TextSize = 16
+buyButton.MouseButton1Click:connect(function()
+MarketplaceService:PromptPurchase(player, 878902564)
+end)
+end
+end)
