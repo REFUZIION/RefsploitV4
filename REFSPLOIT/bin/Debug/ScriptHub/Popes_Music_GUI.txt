@@ -1,0 +1,561 @@
+local PopesMusicGui = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local Background = Instance.new("Frame")
+local MusicHolder = Instance.new("ScrollingFrame")
+local MusicBTN_1 = Instance.new("TextButton")
+local MusicBTN_2 = Instance.new("TextButton")
+local MusicBTN_3 = Instance.new("TextButton")
+local MusicBTN_4 = Instance.new("TextButton")
+local MusicBTN_5 = Instance.new("TextButton")
+local MusicBTN_6 = Instance.new("TextButton")
+local MusicBTN_7 = Instance.new("TextButton")
+local MusicBTN_8 = Instance.new("TextButton")
+local MusicBTN_9 = Instance.new("TextButton")
+local MusicBTN_10 = Instance.new("TextButton")
+local MusicBTN_11 = Instance.new("TextButton")
+local Music = Instance.new("Frame")
+local Playing = Instance.new("TextLabel")
+local SoundID = Instance.new("TextBox")
+local Play = Instance.new("TextButton")
+local Stop = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+
+wait()
+
+PopesMusicGui.Name = "Pope's Music Gui"
+PopesMusicGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+Drag.Name = "Drag"
+Drag.Parent = PopesMusicGui
+Drag.Active = true
+Drag.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Drag.BackgroundTransparency = 0
+Drag.BorderSizePixel = 0
+Drag.Draggable = true
+Drag.Position = UDim2.new(0.330000013, 0, 0.200000003, 0)
+Drag.Selectable = true
+Drag.Size = UDim2.new(0, 270, 0, 40)
+
+Text.Name = "Text"
+Text.Parent = Drag
+Text.BackgroundColor3 = Color3.new(1, 1, 1)
+Text.BackgroundTransparency = 1
+Text.BorderSizePixel = 0
+Text.Size = UDim2.new(1, 0, 0, 40)
+Text.Font = Enum.Font.SourceSans
+Text.FontSize = Enum.FontSize.Size24
+Text.Text = "Pope's Music Gui"
+Text.TextColor3 = Color3.new(1, 1, 1)
+Text.TextSize = 24
+Text.TextTransparency = 0.10000000149012
+
+Background.Name = "Background"
+Background.Parent = Drag
+Background.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Background.BackgroundTransparency = 1
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0, 0, 1, 0)
+Background.Size = UDim2.new(0, 270, 0, 190)
+
+MusicHolder.Name = "MusicHolder"
+MusicHolder.Parent = Background
+MusicHolder.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+MusicHolder.BackgroundTransparency = 0
+MusicHolder.BorderSizePixel = 0
+MusicHolder.Size = UDim2.new(1, 0, 1, 0)
+MusicHolder.CanvasSize = UDim2.new(0, 0, 3.2, 0)
+MusicHolder.ScrollBarThickness = 10
+
+MusicBTN_1.Name = "MusicBTN_1"
+MusicBTN_1.Parent = MusicHolder
+MusicBTN_1.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_1.BorderSizePixel = 0
+MusicBTN_1.Position = UDim2.new(0, 5, 0, 5)
+MusicBTN_1.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_1.Font = Enum.Font.SourceSans
+MusicBTN_1.FontSize = Enum.FontSize.Size18
+MusicBTN_1.Text = "Hoodie Allen - Lady Killers"
+MusicBTN_1.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_1.TextSize = 18
+MusicBTN_1.TextTransparency = 0.10000000149012
+
+MusicBTN_2.Name = "MusicBTN_2"
+MusicBTN_2.Parent = MusicHolder
+MusicBTN_2.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_2.BorderSizePixel = 0
+MusicBTN_2.Position = UDim2.new(0, 5, 0, 60)
+MusicBTN_2.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_2.Font = Enum.Font.SourceSans
+MusicBTN_2.FontSize = Enum.FontSize.Size18
+MusicBTN_2.Text = "Hoodie Allen - Dumb For You"
+MusicBTN_2.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_2.TextSize = 18
+MusicBTN_2.TextTransparency = 0.10000000149012
+
+MusicBTN_3.Name = "MusicBTN_3"
+MusicBTN_3.Parent = MusicHolder
+MusicBTN_3.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_3.BorderSizePixel = 0
+MusicBTN_3.Position = UDim2.new(0, 5, 0, 115)
+MusicBTN_3.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_3.Font = Enum.Font.SourceSans
+MusicBTN_3.FontSize = Enum.FontSize.Size18
+MusicBTN_3.Text = "G Eazy - Calm Down"
+MusicBTN_3.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_3.TextSize = 18
+MusicBTN_3.TextTransparency = 0.10000000149012
+
+MusicBTN_4.Name = "MusicBTN_4"
+MusicBTN_4.Parent = MusicHolder
+MusicBTN_4.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_4.BorderSizePixel = 0
+MusicBTN_4.Position = UDim2.new(0, 5, 0, 170)
+MusicBTN_4.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_4.Font = Enum.Font.SourceSans
+MusicBTN_4.FontSize = Enum.FontSize.Size18
+MusicBTN_4.Text = "G Eazy - Far Alone"
+MusicBTN_4.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_4.TextSize = 18
+MusicBTN_4.TextTransparency = 0.10000000149012
+
+MusicBTN_5.Name = "MusicBTN_5"
+MusicBTN_5.Parent = MusicHolder
+MusicBTN_5.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_5.BorderSizePixel = 0
+MusicBTN_5.Position = UDim2.new(0, 5, 0, 225)
+MusicBTN_5.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_5.Font = Enum.Font.SourceSans
+MusicBTN_5.FontSize = Enum.FontSize.Size18
+MusicBTN_5.Text = "KYLE - iSpy"
+MusicBTN_5.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_5.TextSize = 18
+MusicBTN_5.TextTransparency = 0.10000000149012
+
+MusicBTN_6.Name = "MusicBTN_6"
+MusicBTN_6.Parent = MusicHolder
+MusicBTN_6.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_6.BorderSizePixel = 0
+MusicBTN_6.Position = UDim2.new(0, 5, 0, 280)
+MusicBTN_6.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_6.Font = Enum.Font.SourceSans
+MusicBTN_6.FontSize = Enum.FontSize.Size18
+MusicBTN_6.Text = "Night Lovell - Contraband"
+MusicBTN_6.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_6.TextSize = 18
+MusicBTN_6.TextTransparency = 0.10000000149012
+
+MusicBTN_7.Name = "MusicBTN_7"
+MusicBTN_7.Parent = MusicHolder
+MusicBTN_7.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_7.BorderSizePixel = 0
+MusicBTN_7.Position = UDim2.new(0, 5, 0, 335)
+MusicBTN_7.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_7.Font = Enum.Font.SourceSans
+MusicBTN_7.FontSize = Enum.FontSize.Size18
+MusicBTN_7.Text = "21 Pilots - Heathens"
+MusicBTN_7.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_7.TextSize = 18
+MusicBTN_7.TextTransparency = 0.10000000149012
+
+MusicBTN_8.Name = "MusicBTN_8"
+MusicBTN_8.Parent = MusicHolder
+MusicBTN_8.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_8.BorderSizePixel = 0
+MusicBTN_8.Position = UDim2.new(0, 5, 0, 390)
+MusicBTN_8.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_8.Font = Enum.Font.SourceSans
+MusicBTN_8.FontSize = Enum.FontSize.Size18
+MusicBTN_8.Text = "Logic - Flexicution"
+MusicBTN_8.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_8.TextSize = 18
+MusicBTN_8.TextTransparency = 0.10000000149012
+
+MusicBTN_9.Name = "MusicBTN_9"
+MusicBTN_9.Parent = MusicHolder
+MusicBTN_9.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_9.BorderSizePixel = 0
+MusicBTN_9.Position = UDim2.new(0, 5, 0, 445)
+MusicBTN_9.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_9.Font = Enum.Font.SourceSans
+MusicBTN_9.FontSize = Enum.FontSize.Size18
+MusicBTN_9.Text = "Coucheron - LOUD"
+MusicBTN_9.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_9.TextSize = 18
+MusicBTN_9.TextTransparency = 0.10000000149012
+
+MusicBTN_10.Name = "MusicBTN_10"
+MusicBTN_10.Parent = MusicHolder
+MusicBTN_10.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_10.BorderSizePixel = 0
+MusicBTN_10.Position = UDim2.new(0, 5, 0, 500)
+MusicBTN_10.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_10.Font = Enum.Font.SourceSans
+MusicBTN_10.FontSize = Enum.FontSize.Size18
+MusicBTN_10.Text = "The Chainsmokers - Roses"
+MusicBTN_10.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_10.TextSize = 18
+MusicBTN_10.TextTransparency = 0.10000000149012
+
+MusicBTN_11.Name = "MusicBTN_10"
+MusicBTN_11.Parent = MusicHolder
+MusicBTN_11.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+MusicBTN_11.BorderSizePixel = 0
+MusicBTN_11.Position = UDim2.new(0, 5, 0, 555)
+MusicBTN_11.Size = UDim2.new(0, 245, 0, 50)
+MusicBTN_11.Font = Enum.Font.SourceSans
+MusicBTN_11.FontSize = Enum.FontSize.Size18
+MusicBTN_11.Text = "Pumped Up Kicks"
+MusicBTN_11.TextColor3 = Color3.new(1, 1, 1)
+MusicBTN_11.TextSize = 18
+MusicBTN_11.TextTransparency = 0.10000000149012
+
+Music.Name = "Music"
+Music.Parent = Background
+Music.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+Music.BackgroundTransparency = 0
+Music.BorderColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Music.BorderSizePixel = 0
+Music.Position = UDim2.new(0, 0, 1, 0)
+Music.Size = UDim2.new(1, 0, 0, 110)
+
+Playing.Name = "Playing"
+Playing.Parent = Music
+Playing.BackgroundColor3 = Color3.new(1, 1, 1)
+Playing.BackgroundTransparency = 1
+Playing.BorderSizePixel = 0
+Playing.Size = UDim2.new(1, 0, 0.0500000007, 20)
+Playing.Font = Enum.Font.SourceSans
+Playing.FontSize = Enum.FontSize.Size18
+Playing.Text = "Now playing: N/A"
+Playing.TextColor3 = Color3.new(1, 1, 1)
+Playing.TextSize = 18
+Playing.TextScaled = true
+
+SoundID.Name = "SoundID"
+SoundID.Parent = Music
+SoundID.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+SoundID.BorderSizePixel = 0
+SoundID.Position = UDim2.new(0.100000001, 0, 0.280000001, 0)
+SoundID.Size = UDim2.new(0.800000012, 0, 0, 35)
+SoundID.Font = Enum.Font.SourceSans
+SoundID.FontSize = Enum.FontSize.Size18
+SoundID.Text = "Sound ID"
+SoundID.TextTransparency = .4
+SoundID.TextColor3 = Color3.new(128, 128, 128)
+SoundID.TextSize = 18
+
+Stop.Name = "Stop"
+Stop.Parent = Music
+Stop.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Stop.BackgroundTransparency = 0.30000001192093
+Stop.BorderSizePixel = 0
+Stop.Position = UDim2.new(0.1, 0, 0.600, 0)
+Stop.Size = UDim2.new(0.20, 0, 0, 35)
+Stop.Font = Enum.Font.SourceSans
+Stop.FontSize = Enum.FontSize.Size18
+Stop.Text = "Stop"
+Stop.TextColor3 = Color3.new(1, 1, 1)
+Stop.TextSize = 18
+
+Play.Name = "Play"
+Play.Parent = Music
+Play.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+Play.BackgroundTransparency = 0.30000001192093
+Play.BorderSizePixel = 0
+Play.Position = UDim2.new(0.305, 0, 0.600, 0)
+Play.Size = UDim2.new(0.387, 0, 0, 35)
+Play.Font = Enum.Font.SourceSans
+Play.FontSize = Enum.FontSize.Size18
+Play.Text = "Play"
+Play.TextColor3 = Color3.new(1, 1, 1)
+Play.TextSize = 18
+
+TextBox.Parent = Music
+TextBox.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+TextBox.BackgroundTransparency = 0.30000001192093
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.7, 0, 0.6, 0)
+TextBox.Size = UDim2.new(0.20, 0, 0, 35)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.FontSize = Enum.FontSize.Size18
+TextBox.Text = "Volume"
+TextBox.TextTransparency = .4
+TextBox.TextColor3 = Color3.new(128, 128, 128)
+TextBox.TextSize = 18
+
+local Follow='LocalPlayer'
+local Plr=game.Players[Follow]
+local Char=Plr.Character
+local RootPart=Char.HumanoidRootPart
+
+local Parts=Instance.new('Model')
+Parts.Parent=Char
+
+local Whitelist={}
+
+Whitelist[Plr.Name]={Name=Plr.Name,UserId=Plr.UserId}
+
+local Settings={
+    Prefix=';',
+    Color='Light blue',
+    Body=0,
+    Rainbow=true,
+    Global=false,
+    Angle=25,
+    Goal=.30,
+    Split=1,
+    Parts=2,
+    Disposition=3,
+    Power=400,
+    Material='Neon',
+    Colors={
+        Color3.fromRGB(244,66,66),
+        Color3.fromRGB(244,149,66),
+        Color3.fromRGB(244,203,66),
+        Color3.fromRGB(83,244,66),
+        Color3.fromRGB(66,244,212),
+        Color3.fromRGB(66,152,244),
+        Color3.fromRGB(107,66,244),
+        Color3.fromRGB(229,66,244)
+    }
+}
+
+function Sound(Name,Looped,Pitch,Volume,ID,Parent)
+    local Snd=Instance.new('Sound')
+    Snd.Name=Name
+    Snd.SoundId='rbxassetid://'..ID
+    Snd.Looped=Looped
+    Snd.PlaybackSpeed=Pitch
+    Snd.Volume=Volume
+    Snd.EmitterSize=10
+    Snd.MaxDistance=100
+    Snd.Parent=Parent
+    
+    return Snd
+end
+
+local Music=Sound('Music',true,1,1,1,RootPart)
+
+function Part(Num)
+    Settings.Parts=Num
+
+    for i,v in pairs(Parts:GetChildren()) do
+        v:Destroy()
+    end
+
+    for i=1,Num do
+        local P=Instance.new('Part')
+        local Light=Instance.new('PointLight')
+        Light.Brightness=1
+        Light.Range=5
+        Light.Parent=P
+        P.BrickColor=BrickColor.new(Settings.Color)
+        P.Transparency=0
+        P.Anchored=true
+        P.CanCollide=false
+        P.Material=Settings.Material
+        P.Size=Vector3.new(.2,.2,.2)
+        P.CFrame=CFrame.new(RootPart.CFrame.X,RootPart.CFrame.Y+Settings.Body,RootPart.CFrame.Z)
+        P.Locked=true
+        P.Parent=Parts
+    end
+end
+
+Part(31)
+
+function ColorChange()
+    while game:GetService'RunService'.RenderStepped:wait() do
+        local Color=Settings.Colors[math.random(1,#Settings.Colors)]
+        for i,v in pairs(Parts:GetChildren()) do
+            v.Material=Settings.Material
+            if Settings.Rainbow==false then
+                v.BrickColor=BrickColor.new(Settings.Color)
+                v.PointLight.Color=Color3.fromRGB(255,255,255)
+            else
+                v.BrickColor=BrickColor.new(Color)
+                v.PointLight.Color=Color
+            end
+        end
+    end
+end
+
+local Rad=0
+
+function Rot()
+    while game:GetService'RunService'.RenderStepped:wait() do
+        Rad=Rad+1
+        
+        if Rad>=360 then
+            Rad=0
+        end
+        
+        for i,v in pairs(Parts:GetChildren()) do
+            v.CFrame=v.CFrame:Lerp(CFrame.new(RootPart.CFrame.X,RootPart.CFrame.Y+Settings.Body,RootPart.CFrame.Z)*CFrame.Angles(0,math.rad((360/Settings.Parts)*((i+(i*Settings.Angle))/Settings.Split)+Rad),0)*CFrame.new(0,0,Settings.Disposition+(v.Size.Z)),Settings.Goal)
+        end
+    end
+end
+
+function Size()
+    while game:GetService'RunService'.RenderStepped:wait() do
+        for i,v in pairs(Parts:GetChildren()) do
+            v.Size=v.Size:Lerp(Vector3.new(.8,.2,(Music.PlaybackLoudness/Settings.Power)*math.random(4,8)),Settings.Goal)
+        end
+    end
+end
+
+spawn(Rot)
+spawn(Size)
+spawn(ColorChange)
+
+SoundID.FocusLost:connect(function()
+	wait(.2)
+	SoundID.Text = "SoundID"
+end)
+
+Play.MouseButton1Down:connect(function()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(SoundID.Text)
+                Music.SoundId='https://www.roblox.com/asset/?id= '..SoundID.Text
+                Music:Play()
+				Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+end)
+
+function Play1()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(342067275)
+	MusicBTN_1.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://342067275'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play2()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(197831678)
+	MusicBTN_2.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://197831678'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play3()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(332825328)
+	MusicBTN_3.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://332825328'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play4()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(271827870)
+	MusicBTN_4.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://271827870'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play5()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(565649306)
+	MusicBTN_5.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://565649306'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play6()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(538127682)
+	MusicBTN_6.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://538127682'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play7()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(437141803)
+	MusicBTN_7.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://437141803'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play8()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(437864653)
+	MusicBTN_8.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://437864653'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play9()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(585319841)
+	MusicBTN_9.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://585319841'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play10()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(270481110)
+	MusicBTN_10.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://270481110'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+function Play11()
+	local Asset = game:GetService("MarketplaceService"):GetProductInfo(601852677)
+	MusicBTN_11.MouseButton1Down:connect(function()
+		Music.SoundId = 'rbxassetid://601852677'
+		Music:Play()
+		Music.Volume = TextBox.Text
+Playing.Text = "Now playing: "..Asset.Name
+	end)
+end
+
+Stop.MouseButton1Down:connect(function()
+	local Asset1 = game:GetService("MarketplaceService"):GetProductInfo(342067275)
+	local Asset2 = game:GetService("MarketplaceService"):GetProductInfo(197831678)
+	local Asset3 = game:GetService("MarketplaceService"):GetProductInfo(332825328)
+	local Asset4 = game:GetService("MarketplaceService"):GetProductInfo(271827870)
+	local Asset5 = game:GetService("MarketplaceService"):GetProductInfo(565649306)
+	local Asset6 = game:GetService("MarketplaceService"):GetProductInfo(538127682)
+	local Asset7 = game:GetService("MarketplaceService"):GetProductInfo(437141803)
+	local Asset8 = game:GetService("MarketplaceService"):GetProductInfo(437864653)
+	local Asset9 = game:GetService("MarketplaceService"):GetProductInfo(585319841)
+	local Asset10 = game:GetService("MarketplaceService"):GetProductInfo(270481110)
+	Music.SoundId='https://www.roblox.com/asset/?id= '..SoundID.Text
+	Music:Stop()
+wait()
+Playing.Text = "Now playing: N/A"
+end)
+
+Play1()
+Play2()
+Play3()
+Play4()
+Play5()
+Play6()
+Play7()
+Play8()
+Play9()
+Play10()
+Play11()

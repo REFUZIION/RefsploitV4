@@ -1,0 +1,58 @@
+imageZero = "http://www.roblox.com/asset/?id=863044263"
+imageOne = "http://www.roblox.com/asset/?id=863044406"
+imageTwo = "http://www.roblox.com/asset/?id=863044507"
+imageThree = "http://www.roblox.com/asset/?id=863044603"
+imageFour = "http://www.roblox.com/asset/?id=863044771"
+
+function createSound()
+	datBoi = Instance.new("Sound", game.Workspace)
+	datBoi.Name = "datBoi"
+	datBoi.SoundId = "rbxassetid://441091381"
+	datBoi.Volume = 15
+	datBoi.Looped = true
+	datBoi:Play()
+end
+
+function createSky()
+skyBox = Instance.new("Sky", game.Lighting)
+	while true do
+		skyBox.SkyboxBk = imageZero
+		skyBox.SkyboxDn = imageZero
+		skyBox.SkyboxFt = imageZero
+		skyBox.SkyboxLf = imageZero
+		skyBox.SkyboxRt = imageZero
+		skyBox.SkyboxUp = imageZero
+		wait(0.35)
+  	  	skyBox.SkyboxBk = imageOne
+    	skyBox.SkyboxDn = imageOne
+  	  	skyBox.SkyboxFt = imageOne
+ 	  	skyBox.SkyboxLf = imageOne
+    	skyBox.SkyboxRt = imageOne
+    	skyBox.SkyboxUp = imageOne
+    	wait(0.35)
+    	skyBox.SkyboxBk = imageTwo
+    	skyBox.SkyboxDn = imageTwo
+    	skyBox.SkyboxFt = imageTwo
+    	skyBox.SkyboxLf = imageTwo
+    	skyBox.SkyboxRt = imageTwo
+    	skyBox.SkyboxUp = imageTwo
+    	wait(0.35)
+    	skyBox.SkyboxBk = imageThree
+    	skyBox.SkyboxDn = imageThree
+    	skyBox.SkyboxFt = imageThree
+    	skyBox.SkyboxLf = imageThree
+    	skyBox.SkyboxRt = imageThree
+    	skyBox.SkyboxUp = imageThree
+    	wait(0.35)
+    	skyBox.SkyboxBk = imageFour
+    	skyBox.SkyboxDn = imageFour
+    	skyBox.SkyboxFt = imageFour
+    	skyBox.SkyboxLf = imageFour
+    	skyBox.SkyboxRt = imageFour
+    	skyBox.SkyboxUp = imageFour
+    	wait(0.35)
+	end
+end
+
+createSound()
+createSky()
