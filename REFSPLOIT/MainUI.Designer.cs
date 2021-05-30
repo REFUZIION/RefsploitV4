@@ -176,7 +176,7 @@ namespace REFSPLOIT
             this.TabControl.Size = new System.Drawing.Size(696, 409);
             this.TabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl.TabIndex = 11;
-            this.TabControl.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TabControl_DrawItem);
+            //this.TabControl.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TabControl_DrawItem);
             // 
             // LuaExec
             // 
@@ -266,9 +266,9 @@ namespace REFSPLOIT
             this.ScriptHubList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ScriptHubList.ForeColor = System.Drawing.Color.White;
             this.ScriptHubList.FormattingEnabled = true;
-            this.ScriptHubList.Location = new System.Drawing.Point(6, 26);
+            this.ScriptHubList.Location = new System.Drawing.Point(3, 26);
             this.ScriptHubList.Name = "ScriptHubList";
-            this.ScriptHubList.Size = new System.Drawing.Size(147, 221);
+            this.ScriptHubList.Size = new System.Drawing.Size(176, 221);
             this.ScriptHubList.TabIndex = 8;
             // 
             // panel1
@@ -352,7 +352,6 @@ namespace REFSPLOIT
             this.CodeBox.CommentPrefix = "--";
             this.CodeBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.CodeBox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.CodeBox.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.CodeBox.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.CodeBox.IsReplaceMode = false;
             this.CodeBox.Language = FastColoredTextBoxNS.Language.Lua;
@@ -494,6 +493,7 @@ namespace REFSPLOIT
             this.LuacCodeBox.CommentPrefix = "--";
             this.LuacCodeBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LuacCodeBox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.LuacCodeBox.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.LuacCodeBox.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.LuacCodeBox.IsReplaceMode = false;
             this.LuacCodeBox.Language = FastColoredTextBoxNS.Language.Lua;

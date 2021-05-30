@@ -21,7 +21,8 @@ namespace REFSPLOIT
             InitializeComponent();
         }
 
-        // draw tabcontrol
+        // draw tabcontrol *not working*
+        /*
         private Dictionary<TabPage, Color> TabColors = new Dictionary<TabPage, Color>();
         private void SetTabHeader(TabPage page, Color color)
         {
@@ -44,7 +45,7 @@ namespace REFSPLOIT
                 e.DrawFocusRectangle();
             }
         }
-
+        */
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
